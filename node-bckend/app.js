@@ -1,9 +1,12 @@
 require('dotenv').config();
 const express = require('express');
 const AWS = require('aws-sdk');
+const cors = require('cors');
 process.env.AWS_SDK_JS_SUPPRESS_MAINTENANCE_MODE_MESSAGE = '1';
 const mysql = require('mysql2/promise');
 const app = express();
+app.use(cors());
+app.use(express.json());
 const sqs = new AWS.SQS({
     region: process.env.AWS_REGION,
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,

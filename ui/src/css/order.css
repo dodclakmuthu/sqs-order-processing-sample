@@ -1,0 +1,42 @@
+.container{
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    width: fit-content;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.form-group input{
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    float: right;
+}
